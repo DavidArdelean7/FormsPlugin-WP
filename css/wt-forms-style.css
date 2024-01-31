@@ -1,0 +1,338 @@
+/*login/registration*/
+.grw-form-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    font-family:"Poppins", Arial, sans-serif!important;
+}
+
+.grw-form-page *{
+    outline-color: #88C8FC!important;
+}
+
+.grw-form-page input, .woocommerce-ResetPassword #user_login{
+    border-radius: 8px;
+    line-height: 52px;
+    padding: 0 16px;
+    font-size: 17px;
+    resize: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #3891A6;
+    color: #E2E2E2!important;
+    border: none;
+}
+
+.grw-form-page input::placeholder, .woocommerce-ResetPassword input::placeholder{
+    color: white!important;
+		opacity:0.5;
+}
+
+.grw-form-page input[type="checkbox"], .grw-form-page input[type="radio"]{
+    width: auto;
+}
+
+.btn-wrapper {
+		margin-top:10px;
+}
+
+.grw-form-page button , .woocommerce-ResetPassword  button, #logout_btn{
+    text-align: center;
+    cursor: pointer;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+    direction: ltr;
+    font-weight: 600;
+    background-color: #88C8FC;
+    color: #001D4A;
+    font-size: 17px;
+}
+
+#logout_btn{
+    width:50%!important;
+    margin-top: 30px;
+}
+
+#logout_btn a{
+    color:#001D4A!important;
+}
+.logged_wrapper{
+    display:flex;
+    flex-direction: column!important;
+    justify-content: center;
+    align-items: center;
+}
+
+a#lost-your-password{
+    color:#001D4A!important;
+}
+
+.lost_reset_password button:hover, .lost_reset_password button:focus{
+    background-color:#001D4A!important;
+}
+
+.lost_reset_password p:first-of-type{
+    font-size: 24px;
+    font-weight: 700;
+    font-family:"Poppins", Arial, sans-serif!important;
+}
+
+.grw-form-page button.aux_btn{
+   
+    padding: 10px;
+    background-color: transparent;
+    /* width: 50%;
+     * border: 2px solid var(--e-global-color-c567be2);*/
+    color: #3891A6;
+}
+
+#resend_otp{
+	border: 2px solid #3891A6;
+    margin-bottom: 10px;
+}
+
+.grw-form-page button:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.grw-form-page button:not(.aux_btn):hover, .grw-form-page button:not(.aux_btn):focus{
+    background-color: #001D4A;
+}
+
+#timer{
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+}
+
+#register_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grw-hidden {
+    display: none!important;
+}
+
+.grw-error{
+    font-size: 0.8em;
+    color: red;
+		display:block;
+}
+
+#phone_field{
+    display: flex;
+    position: relative;
+}
+
+#phone_field select{
+    width: 10%;
+    position: absolute;
+    height: 50%;
+    align-self: center;
+    display: flex;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+#phone_field input{
+    padding-left: 5%;
+    border-bottom-left-radius: 0!important;
+    border-top-left-radius: 0!important;
+    border-left: 0!important;
+}
+
+#phone_field input:focus-visible, #phone_field .selection:focus-visible{
+
+    outline:none!important;
+}
+
+#phone_field:focus-within {
+    outline: 2px solid;
+}
+  
+#phone_field:focus-within:not(:focus) {
+outline: none;
+}
+
+.field-columns{
+     display: flex;
+     gap: 20px;
+     flex: 1;
+     align-items: center;
+ }
+ 
+ .field-columns .field-wrapper, .field-columns button{
+     width: 50%!important;
+ }
+ 
+ .btn-wrapper{
+     margin-top:20px;
+ }
+
+#grw-tabs-wrapper div#tab-items {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+		padding-bottom:3px;
+		color: #3891A6;
+	    gap: 24px;
+}
+#grw-tabs-wrapper .tab-item{
+	cursor:pointer;
+			opacity:0.5;
+}
+
+#grw-tabs-wrapper .tab-item.tab-active{
+		opacity:1!important;
+		border-bottom: 3px solid #3891A6;
+}
+
+.grw-phone-page .select2-selection, .grw-phone-page .select_container{
+    background: transparent!important;
+    border: none!important;
+    padding-left: 10px!important;
+}
+
+.grw-phone-page .select2-container .select2-selection--single{
+    display: flex!important;
+    align-items: center!important;
+    height: 100%!important;
+}
+.grw-phone-page .select2_container {
+    position: absolute!important;
+}
+.grw-phone-page .selected-option{
+    color: #E2E2E2!important;
+}
+
+.grw-location-page .select2-selection, .grw-location-page .select_container{
+	border-radius: 8px;
+		height:52px!important;
+    padding: 0 16px;
+    font-size: 17px;
+    resize: none;
+    width: 100%;
+    background-color: #3891A6!important;
+  
+    border: none!important;
+}
+
+@media only screen and (max-width:767px){
+	#phone_field input {
+    padding-left: 25%;
+}
+	#grw-tabs-wrapper div#tab-items{
+		font-weight:700;
+		font-size:16px;
+	}
+	#resend_otp{
+		width:100%!important;
+	}
+}
+
+#email_otp{
+	height:auto;
+	line-height:1em;
+	padding:0;
+	background-color:transparent;
+}
+.select_container:has(.select2-container--disabled){
+	opacity:0.6!important;
+}
+.selected-option{
+	  color: white!important;
+}
+
+.select2-container{
+    background-color: #3891A6!important;
+    align-items: center!important;
+    margin-bottom: 10px!important;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #666!important;
+    border-right:0!important;
+}
+
+.select2-selection__arrow{
+    display: none!important;
+}
+
+.select2-dropdown {
+    width: 300px!important;
+}
+
+.select_container::after{
+    display: none!important;
+}
+
+.grw-form-page h6{
+    font-size: 32px;
+    font-weight: 600;;
+}
+
+#already_logged{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*css loader animation*/
+.animation-field{
+	position:relative;
+	display:flex;
+}
+#loader-animation{
+	display:none;
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 52px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin: 8px;
+    border: 8px solid #88C8FC;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #88C8FC transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
